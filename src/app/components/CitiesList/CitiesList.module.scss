@@ -1,0 +1,16 @@
+.gallery {
+  display: grid;
+  grid-gap: clamp(15px, 1.7vw, 25px);
+  grid-template-columns: repeat(4, minmax(330px, 1fr));
+  grid-auto-rows: clamp(500px, 38vw, 700px);
+
+  @media (max-width: 1429px) {
+    grid-template-columns: repeat(3, minmax(330px, 1fr));
+  }
+  @media (max-width: 1063px) {
+    grid-template-columns: repeat(2, minmax(330px, 1fr));
+  }
+  @media (max-width: 713px) {
+    grid-template-columns: repeat(1, minmax(330px, 1fr));
+  }
+}

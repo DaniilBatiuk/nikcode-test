@@ -1,0 +1,56 @@
+.filters {
+  margin-bottom: clamp(20px, 2.5vw, 40px);
+  display: flex;
+  justify-content: flex-end;
+  gap: clamp(7px, 2.5vw, 15px);
+  flex-wrap: wrap;
+
+  @media (max-width: 1241px) {
+    justify-content: flex-start;
+  }
+
+  & > div {
+    flex-grow: 1;
+  }
+
+  & > div > input {
+    @media (max-width: 1241px) {
+      width: 100%;
+    }
+  }
+
+  & input,
+  & select {
+    background-color: inherit;
+    border: 2px solid rgb(243, 170, 81);
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 7px;
+    font-family: inherit;
+    font-weight: inherit;
+    height: 44px;
+
+    transition-property: border;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in-out;
+
+    &:focus,
+    &:active {
+      border: 2px solid rgb(160, 88, 0);
+      outline: none;
+      background-color: inherit;
+    }
+
+    &:hover {
+      border: 2px solid rgb(160, 88, 0);
+    }
+  }
+
+  & input {
+    width: 350px;
+  }
+
+  & select {
+    cursor: pointer;
+  }
+}

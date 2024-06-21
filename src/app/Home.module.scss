@@ -1,0 +1,26 @@
+@import "@/assets/styles/variables.scss";
+
+.home {
+  margin-block: clamp(20px, 2.5vw, 40px);
+
+  &__container {
+    color: black;
+  }
+
+  &__main {
+    display: flex;
+    flex-direction: column;
+    row-gap: clamp(10px, 2.5vw, 20px);
+    letter-spacing: 1.2px;
+    line-height: 20px;
+    margin-bottom: clamp(15px, 2.5vw, 30px);
+
+    & > h1 {
+      @extend %roboto_500_27_40;
+      color: $mainTextColor;
+    }
+    & > p {
+      max-width: 1000px;
+    }
+  }
+}

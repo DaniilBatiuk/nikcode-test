@@ -1,0 +1,17 @@
+@import "@/assets/styles/variables.scss";
+
+.header {
+  width: 100%;
+  max-height: 60px;
+  @extend %roboto_500_25_28;
+  background-color: $backgroundColor;
+  padding-block: 10px;
+
+  &__container {
+    text-align: center;
+
+    & > p {
+      color: $mainTextColor;
+    }
+  }
+}

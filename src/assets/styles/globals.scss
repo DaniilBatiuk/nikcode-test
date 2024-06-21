@@ -1,0 +1,59 @@
+@import "./reset.scss";
+@import "./variables.scss";
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @extend %roboto_400_18;
+  background-color: rgb(252, 246, 239);
+
+  overflow-x: hidden;
+  overflow-y: auto;
+
+  &::-webkit-scrollbar {
+    display: block;
+    width: 5px;
+    overflow: auto;
+    height: 5px;
+    background-color: rgb(211, 130, 25);
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: rgb(255, 211, 153);
+    border-radius: 30px;
+  }
+}
+
+.wrapper {
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 1 auto;
+}
+
+[class*="__container"] {
+  max-width: 1728px;
+  margin: 0px auto;
+  padding: 0px 15px;
+  overflow-wrap: break-word;
+}
+
+.no-data {
+  width: 100%;
+  height: clamp(200px, 20vw, 400px);
+  font-weight: 500;
+  font-size: clamp(40px, 2.5vw, 50px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.leaflet-container {
+  height: 100%;
+  width: 100%;
+}

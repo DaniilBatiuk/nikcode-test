@@ -1,0 +1,21 @@
+@import "@/assets/styles/variables.scss";
+
+.footer {
+  width: 100%;
+  max-height: 60px;
+  background-color: $backgroundColor;
+  padding-block: 10px;
+
+  &__container {
+    text-align: center;
+  }
+
+  &__year {
+    font-size: 16px;
+    margin-top: 10px;
+  }
+
+  &__creator {
+    color: $mainTextColor;
+  }
+}
