@@ -1,6 +1,6 @@
 # NickCode test
 
-## How see result?
+## How to see result?
 
 Open [https://nikcode-test-henna.vercel.app/](https://nikcode-test-henna.vercel.app/) to go to the deployed website and see the result.
 
