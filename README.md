@@ -2,7 +2,7 @@
 
 ## How see result?
 
-Open [http://localhost:3000](http://localhost:3000) to go to the deployed website and see the result.
+Open [https://nikcode-test-henna.vercel.app/](https://nikcode-test-henna.vercel.app/) to go to the deployed website and see the result.
 
 If you want to run on a local - write to me and I will provide you secrets.
 
